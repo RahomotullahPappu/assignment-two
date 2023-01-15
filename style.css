@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.praimary-par {
+  font-size: small;
+  color: rgb(73, 71, 71);
+}
+
+.praimary-btn {
+  color: white;
+  background-color: chocolate;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 120px;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1250px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 50px 150px;
+
+}
+
+nav>ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.first-section {
+  background-color: blanchedalmond;
+  text-align: center;
+  height: 870px;
+
+}
+
+.first-section-txt {
+  font-size: 2.5em;
+}
+
+
+img {
+  width: 70%;
+  height: 500px;
+}
+
+/* second Section */
+
+.second-section {
+  display: flex;
+  width: 100%;
+  padding: 0 250px;
+  margin-top: 25px;
+
+}
+
+.second-section-pic {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  padding-right: 25px;
+}
+
+.second-section-pic>img {
+  height: 250px;
+  width: 95%;
+
+}
+
+.second-section-text {
+  width: 50%;
+  padding-left: 25px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.second-section-text-h {
+  font-size: 2em;
+}
+
+
+/* third-section */
+
+.third-section {
+  display: flex;
+  width: 100%;
+  padding: 50px 250px;
+}
+
+.line {
+  display: grid;
+  font-weight: bold;
+  color: chocolate;
+}
+
+.third-section-text {
+  width: 50%;
+  padding-right: 25px;
+}
+
+.third-section-text>.third-section-text-box>.third-section-text-box-t {
+  padding-left: 5%;
+  border: 0px;
+  margin-top: 30px;
+}
+
+.third-section-pic {
+  width: 50%;
+  padding-left: 25px;
+  
+}
+
+.third-section-pic > img {
+  height: 500px;
+  width: 95%;
+}
+
+.third-section-btn {
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+  background-color: chocolate;
+  border: none;
+  border-radius: 5px;
+  height: 150px;
+  width: 200px;
+}
+
+.mini-section {
+  width: 100%;
+  padding: 50px 250px;
+}
+
+.fourth-section {
+  padding: 50px 250px;
+  height: 400px;
+
+}
+
+.fourth-section-pic {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+
+
+.fourth-section-pic-icon img {
+  padding: 20px;
+  height: 80px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.fourth-section-pic-icon:hover {
+  color: rgb(231, 6, 6);
+  background-color: aquamarine;
+  border: 1px solid black;
+}
+
+
+
+
+/* fifth-section */
+
+.fifth-section {
+  width: 100%;
+  padding: 50px 250px;
+  height: 50px;
+
+
+}
+
+.fifth-section-text {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.fifth-section-sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  padding-top: 25px;
+}
+
+.fifth-section-sponsor img {
+  height: 35px;
+  padding-left: 20px;
+  filter: grayscale(1);
+  align-items: center;
+}
+
+
+/* extra-section */
+
+.extra-section {
+  display: flex;
+  width: 100%;
+  padding: 100px 250px;
+  height: 440px;
+  padding-top: 0px
+}
+
+.extra-section-text {
+  align-items: center;
+  width: 50%;
+  padding-right: 25px;
+  background-color: rgb(236, 217, 199);
+}
+
+.extra-section-msg {
+  width: 50%;
+  padding-left: 25px;
+  background-color: rgb(236, 217, 199);
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  padding: 150px 250px;
+  height: 100px;
+  text-align: center;
+}
+
+.footer-cpyw {
+  background-color: rgb(238, 225, 225);
+  color: rgb(53, 50, 50);
+  font-size: small;
+  height: 80px;
+  align-self: center;
+  padding-top: 30px;
+}
+
+
+/* Media Queri */
+@media only screen and (max-width: 600px) {
+  nav {
+    display: grid;
+    grid-template-columns: repeat (1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .second-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .third-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .fourth-section-pic {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fifth-section-sponsor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .extra-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
